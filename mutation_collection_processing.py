@@ -43,6 +43,24 @@ NPC_SELL_PRICES: Final[dict[str, float]] = {
     "DOUBLE_PLANT": 4,  # Sunflower
 }
 
+# Ok I really need to just make a tile class, and make a design doc before I keep doing this
+"""
+base_crops = {
+    "MELON": {"MELON": 320, "APPLIES"},
+    "PUMPKIN": 10,
+    "CACTUS": 4,
+    "INK_SACK:3": 3,   # Cocoa Beans
+    "CARROT_ITEM": 3,
+    "WHEAT": 6,
+    "SUGAR_CANE": 4,
+    "NETHER_STALK": 4,
+    "POTATO_ITEM": 3,
+    "RED_MUSHROOM": 10,
+    "MOONFLOWER": 4,
+    "WILD_ROSE": 4,
+    "DOUBLE_PLANT": 4,  # Sunflower
+}
+"""
 
 common_mutations = {
     "ASHWREATH": {"NETHER_STALK": 360},
@@ -55,6 +73,8 @@ common_mutations = {
     "VEILSHROOM": {"RED_MUSHROOM": 33*2},   # I'm not going to bother differentiating red and brown mushrooms
     "WITHERBLOOM": {"WILD_ROSE": 300}
 }
+
+
 
 # TODO: Eventually additive_yield_bonus should be calculated based on the effects of the given mutation
 # For testing purposes it's not but once the effects parsing is added, update this method
